@@ -6,14 +6,14 @@
             "bin": [
                 "hfit.exe"
             ],
-            "hash": "c327348825bfc1d4e6941dacd4fc1f517dc310ecc17e53cc081cea96af90a073"
+            "hash": "c511afc4b262e02036ca81db470df4fb52a20e04aa7ec70bb8d7fac18c374333"
         },
         "arm64": {
             "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.28/hfit_0.9.28_windows_arm64.tar.gz",
             "bin": [
                 "hfit.exe"
             ],
-            "hash": "bfb2491730d81d8e0bfc4a7b6d293f26fbf4573a8e34b8a6dbef5088fa728222"
+            "hash": "75fd7f7d51b2a3ffa1e53e4a942b0997a175236d7ebde1cc00e9b0cd62a8bc6c"
         }
     },
     "homepage": "https://github.com/danielecr/hot-fixture-tool",
