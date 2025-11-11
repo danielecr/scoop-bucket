@@ -1,0 +1,22 @@
+{
+    "version": "0.9.28",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.28/hfit_0.9.28_windows_amd64.tar.gz",
+            "bin": [
+                "hfit.exe"
+            ],
+            "hash": "8bed28792ee3ad08e077371b155efa9f2b70bd9509987e2458309e785033257c"
+        },
+        "arm64": {
+            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.28/hfit_0.9.28_windows_arm64.tar.gz",
+            "bin": [
+                "hfit.exe"
+            ],
+            "hash": "71f556853871bb780c1278388619ee72a3c53b4389254f1e104ea869005961bd"
+        }
+    },
+    "homepage": "https://github.com/danielecr/hot-fixture-tool",
+    "license": "MIT",
+    "description": "Hot Fixture Tool Client - Database fixture testing"
+}
