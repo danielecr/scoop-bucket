@@ -1,7 +1,7 @@
 name: Validate Scoop Manifests
 
 on:
-  workflow_dispatch:  # <-- This enables manual runs from the Actions tab
+  workflow_dispatch:
   pull_request:
     paths:
       - '*.json'
@@ -11,7 +11,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install Scoop
+        run: |
+          Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+          irm get.scoop.sh | iex
+        shell: pwsh
       - name: Validate manifests
         run: |
           scoop install main
           scoop checkver -dir .
+        shell: pwsh
