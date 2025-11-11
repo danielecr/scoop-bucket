@@ -18,6 +18,9 @@ jobs:
         shell: pwsh
       - name: Validate manifests
         run: |
+          Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+          irm get.scoop.sh | iex
+          $env:PATH += ";$env:USERPROFILE\\scoop\\shims"
           scoop install main
           scoop checkver -dir .
         shell: pwsh
