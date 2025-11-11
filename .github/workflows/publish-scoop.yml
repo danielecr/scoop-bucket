@@ -11,16 +11,24 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Install Scoop
         run: |
           Set-ExecutionPolicy RemoteSigned -scope CurrentUser
           irm get.scoop.sh | iex
         shell: pwsh
-      - name: Validate manifests
+
+      - name: Add this bucket to Scoop
         run: |
-          Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-          irm get.scoop.sh | iex
-          $env:PATH += ";$env:USERPROFILE\\scoop\\shims"
-          scoop install main
-          scoop checkver -dir .
+          $bucket = (Get-Location).Path
+          scoop bucket add testbucket $bucket
+        shell: pwsh
+
+      - name: Validate all manifests
+        run: |
+          $manifests = Get-ChildItem -Path . -Filter *.json
+          foreach ($manifest in $manifests) {
+            Write-Host "Validating $($manifest.Name)"
+            scoop info $manifest.BaseName
+          }
         shell: pwsh
