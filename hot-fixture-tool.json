@@ -1,19 +1,19 @@
 {
-    "version": "0.9.28",
+    "version": "0.9.29",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.28/hfit_0.9.28_windows_amd64.tar.gz",
+            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.29/hfit_0.9.29_windows_amd64.tar.gz",
             "bin": [
                 "hfit.exe"
             ],
-            "hash": "bb56cf9b44829f394d7c758ce5863a348e81ddee5fd052cdb09bf8f065cd9a4e"
+            "hash": "7dcd14709e6b3795cbd764262e2ddebb4b5833e0d9ff44ab76605eda0840eb8c"
         },
         "arm64": {
-            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.28/hfit_0.9.28_windows_arm64.tar.gz",
+            "url": "https://github.com/danielecr/hot-fixture-tool/releases/download/v0.9.29/hfit_0.9.29_windows_arm64.tar.gz",
             "bin": [
                 "hfit.exe"
             ],
-            "hash": "b4a7843f32c801d48188255eac05415b3f2af41319f033739c9e792353c1ab71"
+            "hash": "4e99e8cfc20308c2c389290b817c45d10c6b26c017880b5ceca072961c336896"
         }
     },
     "homepage": "https://github.com/danielecr/hot-fixture-tool",
